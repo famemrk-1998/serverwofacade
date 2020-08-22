@@ -21,7 +21,6 @@ public class MyFacade {
     }
     public void startServer(){
         System.out.println("Start working......");
-//        ScheduleServer obj = new ScheduleServer();
         obj.startBooting();
         obj.readSystemConfigFile();
         obj.init();
@@ -31,7 +30,6 @@ public class MyFacade {
     }
     public void stopServer(){
         System.out.println("After work done.........");
-//        ScheduleServer obj = new ScheduleServer();
         obj.releaseProcesses();
         obj.destory();
         obj.destroySystemObjects();
