@@ -30,12 +30,10 @@ public class MyFacade {
 	scheduleServer.initializeContext();
 	scheduleServer.initializeListeners();
 	scheduleServer.createSystemObjects();
-	System.out.println("Start working......");
     }
     
     public  void StopServer()
     {
-        System.out.println("After work done.........");
 	scheduleServer.releaseProcesses();
 	scheduleServer.destory();
 	scheduleServer.destroySystemObjects();
