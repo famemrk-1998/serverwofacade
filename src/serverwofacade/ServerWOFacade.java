@@ -24,6 +24,8 @@ public class ServerWOFacade {
 //	scheduleServer.shutdown();
         MyFacade obj = MyFacade.getMyFacadeObject();
         obj.StartServer();
+        System.out.println("Start working......");
+        System.out.println("After work done.........");
         obj.StopServer();
     }
     
